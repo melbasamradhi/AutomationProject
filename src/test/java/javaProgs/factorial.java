@@ -8,15 +8,19 @@ public class factorial {
 		// TODO Auto-generated method stub
 		//4!=4*3*2*1
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter input number");
-		int n =sc.nextInt();
-	sc.close();
-		int ans=1;
-		for(int r=1;r<=n;r++)
+		System.out.println("Enter the input number");
+		int n=sc.nextInt();
+		int input=n;
+		sc.close();
+		int ans=n;
+		n=n-1;
+		for(int i=1;i<=input-1;i++)
 		{
-		ans = ans*r;	
+			ans=ans*n;
+			n=n-1;
 		}
-		System.out.println(ans);
+		System.out.println("The factorial value of "+input+" is "+ans);
+		
 
 	}
 
